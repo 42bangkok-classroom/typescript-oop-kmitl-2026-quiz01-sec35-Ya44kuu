@@ -10,4 +10,4 @@ if(a <= 0 || isNaN(a)|| !Number.isInteger(a) || raw == ""){
 for(let i = 1;i <= a ;i++){
     sum += i;
 }
-console.log(`sum: ${String(sum)}`);
+console.log(`Sum: ${String(sum)}`);
