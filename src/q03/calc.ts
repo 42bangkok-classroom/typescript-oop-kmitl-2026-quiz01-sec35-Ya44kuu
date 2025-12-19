@@ -5,9 +5,9 @@ let a = Number(args[1]);
 let b = Number(args[2]);
 let raw_a = args[1];
 let raw_b = args[2];
-if( n == undefined){
+if (Number.isInteger(Number(n))){
     console.log("Invalid operator");
-    process.exit();
+    process.exit(); 
 }
 if(isNaN(a) || isNaN(b) || raw_a == ""  || raw_b == ""){
     console.log("Invalid input");
