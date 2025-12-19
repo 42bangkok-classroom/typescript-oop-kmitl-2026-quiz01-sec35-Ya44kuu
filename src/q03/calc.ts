@@ -3,7 +3,9 @@ let args = process.argv.slice(2);
 let n = args[0].toLowerCase();
 let a = Number(args[1]);
 let b = Number(args[2]);
-if(isNaN(a) || isNaN(b)){
+let raw_a = args[0];
+let raw_b = args[1];
+if(isNaN(a) || isNaN(b)|| raw_a === "" || raw_b === ""){
     console.log("Invalid input");
     process.exit();
 }

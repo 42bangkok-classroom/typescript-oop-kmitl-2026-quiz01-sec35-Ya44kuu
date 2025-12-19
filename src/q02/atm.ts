@@ -1,10 +1,10 @@
-import { write } from "node:fs";
-
 export{};
 let args = process.argv.slice(2);
 let balance = Number(args[0]);
 let witda = Number(args[1]);
-if(isNaN(balance)|| isNaN(witda)){
+let rawbalance = args[0];
+let rawwitda = args[1];
+if(isNaN(balance)|| isNaN(witda) || rawbalance === "" || rawwitda === ""){
     console.log("Invalid Input");  
     process.exit();
 }
