@@ -1,7 +1,8 @@
 export{};
 let args = process.argv.slice(2);
 let n = Number(args[0]);
-if(n === Number("") || n === Number(" ")){
+let raw = args[0];
+if(raw == "" || raw == " "){
     console.log("Invalid Input");
     process.exit();
 }
