@@ -9,6 +9,10 @@ if( n == "" || isNaN(a) || isNaN(b)|| raw_a == "" || raw_b == ""){
     console.log("Invalid input");
     process.exit();
 }
+if( n == ""){
+    console.log("Invalid operator");
+    process.exit();
+}
 n = n.toLowerCase();
 switch(n){
     case "add":console.log(String(a + b)) ;break;
