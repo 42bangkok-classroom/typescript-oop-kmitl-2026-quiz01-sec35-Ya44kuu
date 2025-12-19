@@ -3,14 +3,14 @@ let args = process.argv.slice(2);
 let n = args[0];
 let a = Number(args[1]);
 let b = Number(args[2]);
-let raw_a = args[0];
-let raw_b = args[1];
-if( n == "" || isNaN(a) || isNaN(b)|| raw_a == "" || raw_b == ""){
-    console.log("Invalid input");
+let raw_a = args[1];
+let raw_b = args[2];
+if( n == undefined){
+    console.log("Invalid operator");
     process.exit();
 }
-if( n == ""){
-    console.log("Invalid operator");
+if(isNaN(a) || isNaN(b) || raw_a == ""  || raw_b == ""){
+    console.log("Invalid input");
     process.exit();
 }
 n = n.toLowerCase();
