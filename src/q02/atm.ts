@@ -5,7 +5,8 @@ let args = process.argv.slice(2);
 let balance = Number(args[0]);
 let witda = Number(args[1]);
 if(isNaN(balance)|| isNaN(witda)){
-    console.log("Invalid Input");
+    console.log("Invalid Input");  
+    process.exit();
 }
 else if (balance < witda){
     console.log("Insufficient balance");

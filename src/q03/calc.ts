@@ -1,8 +1,8 @@
 export{};
 let args = process.argv.slice(2);
 let n = args[0].toLowerCase();
-let a = Number(args[0]);
-let b = Number(args[0]);
+let a = Number(args[1]);
+let b = Number(args[2]);
 if(isNaN(a) || isNaN(b)){
     console.log("Invalid input");
     process.exit();
