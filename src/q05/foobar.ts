@@ -13,6 +13,6 @@ for(let i = 1;i <= n ;i++){
     }else if (i % 7 === 0){
         console.log("Bar");
     }else{
-        console.log(i);
+        console.log(String(i));
     }
 }
