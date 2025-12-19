@@ -1,7 +1,7 @@
 export{};
 let args = process.argv.slice(2);
 let n = Number(args[0]);
-if(n <= 0|| isNaN(n)){
+if(n <= 0 || isNaN(n) || !Number.isInteger(n)){
     console.log("Invalid Input");
     process.exit();
 }
