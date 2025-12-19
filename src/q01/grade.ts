@@ -1,6 +1,10 @@
 export{};
 let args = process.argv.slice(2);
 let n = Number(args[0]);
+if(n === Number("") || n === Number(" ")){
+    console.log("Invalid Input");
+    process.exit();
+}
 if(n >= 80 && n <= 100){
     console.log(`Grade is A`);
 }else if (n >= 70 && n < 80){
