@@ -10,6 +10,9 @@ if(len === 0){
     process.exit();
 }
 for(const input of args){
+    if(input === ""){
+        process.exit();
+    }
     for(const char of input){
         if(/[a-zA-Z]/.test(char)){
             letter += 1;
